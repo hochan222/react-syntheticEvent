@@ -35,3 +35,15 @@ export default function App() {
 ```
 
 <img src="https://user-images.githubusercontent.com/22424891/128633604-e1425c95-a3a5-41f6-af1d-0b9fba89e169.png" height="150px" />
+
+```js
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click", (e) => {
+      // e.stopPropagation();
+      console.log("[btn] native dom event triggered");
+    });
+```
+
+btn도 추가하면 아래와 같이 된다.
+
+<img src="https://user-images.githubusercontent.com/22424891/128633872-111ca20e-d7ce-4f04-aad2-87f3b3c2c9b6.png" height="150px" />

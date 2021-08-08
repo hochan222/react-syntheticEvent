@@ -11,6 +11,11 @@ export default function App() {
       // e.stopPropagation();
       console.log("[parent div] native dom event triggered");
     });
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click", (e) => {
+      // e.stopPropagation();
+      console.log("[btn] native dom event triggered");
+    });
   }, []);
   const onParentClick = (e) => {
     // e.stopPropagation();
@@ -23,7 +28,7 @@ export default function App() {
 
   return (
     <div id="parent" onClick={onParentClick}>
-      <button onClick={onChildClick}>child</button>
+      <button id="btn" onClick={onChildClick}>child</button>
     </div>
   );
 }
