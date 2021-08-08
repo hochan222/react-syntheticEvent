@@ -55,7 +55,7 @@ btn도 추가하면 아래와 같이 된다.
 
 @ 순서에 따라 `e.stopPropagation();`를 활성화시켜보자.
 
-- @1
+- @1 native dom document
 
 ```
 [btn] native dom event triggered
@@ -65,20 +65,20 @@ btn도 추가하면 아래와 같이 된다.
 [document] native dom event triggered
 ```
 
-- @2
-
+- @2 native dom parentDiv
+ 
 ```
 [btn] native dom event triggered
 [parent div] native dom event triggered
 ```
 
-- @3
+- @3 native dom btn
 
 ```
 [btn] native dom event triggered
 ```
 
-- @4
+- @4 onParentClick
 
 ```
 [btn] native dom event triggered
@@ -87,7 +87,7 @@ btn도 추가하면 아래와 같이 된다.
 [parent div] synthetic event triggered
 ```
 
-- @5
+- @5 onChildClick
 
 ```
 [btn] native dom event triggered

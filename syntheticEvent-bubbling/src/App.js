@@ -27,7 +27,7 @@ export default function App() {
   };
   const onChildClick = (e) => {
     // @5
-    e.stopPropagation();
+    // e.stopPropagation();
     console.log("[child button] synthetic event triggered");
   };
 
