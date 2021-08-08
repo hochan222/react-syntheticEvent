@@ -94,3 +94,8 @@ btn도 추가하면 아래와 같이 된다.
 [parent div] native dom event triggered
 [child button] synthetic event triggered
 ```
+
+### TL;DR
+
+- React synthetic event handler가는 document을 제외한 모든 native dom event handler 발생 이후에 처리된다.
+- `document` native dom event handler는 항상 모든 React synthetic event handler가 처리된 후 처리된다.
